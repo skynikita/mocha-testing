@@ -3,7 +3,7 @@
 module.exports = function() {
 
     // Convert arguments object to an array
-    let args = Array.prototype.slice.call(arguments);
+    const args = Array.prototype.slice.call(arguments);
 
     // Throw error if arguments contain non-finite number values
     if (!args.every(Number.isFinite)) {
@@ -16,3 +16,4 @@ module.exports = function() {
     }, 0);
 
 }
+
